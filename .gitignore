@@ -1,0 +1,41 @@
+# Unreal Engine - generated folders
+Binaries/
+DerivedDataCache/
+Intermediate/
+Saved/
+Build/
+.vs/
+.idea/
+.vscode/
+
+# Visual Studio / Rider
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.vcxproj
+*.vcxproj.filters
+*.vcxproj.user
+*.xcodeproj
+*.xcworkspace
+
+# Compiled / generated files
+*.exe
+*.dll
+*.pdb
+*.ilk
+*.exp
+*.lib
+*.obj
+*.o
+*.a
+
+# Packaged builds
+[Pp]ackaged*/
+[Aa]rchive/
+
+# OS
+.DS_Store
+Thumbs.db
