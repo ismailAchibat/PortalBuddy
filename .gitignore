@@ -39,3 +39,6 @@ Build/
 # OS
 .DS_Store
 Thumbs.db
+
+# Secrets / local MCP config (contains capability token)
+.mcp.json
