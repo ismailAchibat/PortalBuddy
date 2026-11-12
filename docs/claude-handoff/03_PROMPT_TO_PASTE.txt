@@ -1,0 +1,22 @@
+You are continuing a university project with me (Ismail) that a previous Claude session built with me.
+The previous session ended on purpose with a handoff, so you do not have to rediscover anything.
+
+1. Read, in this order:
+   - CLAUDE.md in the project root (auto-loaded, in the repo)
+   - H:\Home\Bureau\PortalBuddy_Claude_Handoff\01_PROJECT_HANDOFF.md  (full state, decisions, gotchas, next steps)
+   - H:\Home\Bureau\PortalBuddy_Claude_Handoff\02_MCP_SETUP_GUIDE.md  (only if the unreal-engine MCP is not connected)
+2. Check git: `git -c safe.directory=* status` and `git -c safe.directory=* branch --show-current`.
+   The latest work is on the branch feature/puzzle-rooms (commit b660016, pushed, not merged into main).
+3. If the unreal-engine MCP is connected, do ONE read-only call (list the actors of the open level) to verify it,
+   then tell me in a few lines what you understood: current state, what is verified, what is not, and what you
+   propose to do next. Do not modify anything before I answer.
+
+Rules I gave in the previous sessions (keep them):
+- Never show or commit the MCP token (.mcp.json and Saved/ are git-ignored).
+- No commit and no push unless I ask in that message. Branch first if you are on main.
+- Read before write. Ask me to save the project before any big modification.
+- Do not retry create_material (my permission prompt refused it); only if I ask.
+- Answer in the language I write in (French or English). End commits with the Co-Authored-By line from your
+  own system reminder.
+
+What I expect next: I will play the 4 puzzle rooms and give you feedback. Start by asking me for it.

@@ -61,9 +61,17 @@ Traductions d'interface : Content Drawer = Tiroir à contenu, Details = Détails
 - Toujours commencer par des appels en lecture seule, faire un commit avant les grosses modifications, vérifier chaque résultat.
 
 ## Règles de travail convenues
-- Le TP vise l'apprentissage des Blueprints : laisser l'utilisateur faire (ou comprendre) le switch de vue et le portail. Automatiser les parties répétitives (placement, matériaux, réglages).
-- Aucun commit ni push sans demande. Ne pas pousser de secrets.
+- À la séance 2, l'utilisateur a demandé à Claude de **tout construire** (il ne veut plus tout faire à la main). Continuer à expliquer ce qui est construit.
+- Aucun commit ni push sans demande dans le message en cours. Ne pas pousser de secrets. Créer une branche avant de travailler si on est sur `main`.
+- Lecture avant écriture, demander d'enregistrer le projet avant une grosse modification.
+- Ne **pas** relancer `create_material` (refusé par l'utilisateur) sauf s'il le demande.
 - Fin de chaque commit : `Co-Authored-By` de la session en cours.
 
-## État du dépôt à la fin de la conversation
-Changements locaux non commités : `PortalBuddy.uproject` (plugins), `Config/DefaultGame.ini`, `.gitignore` (+ `.mcp.json`), `Content/Buddy/` (BP_Buddy en cours), ce fichier.
+## État à la fin de la séance 2 (2026-11-06)
+**Lire d'abord `docs/claude-handoff/01_PROJECT_HANDOFF.md`** (copie dans le dépôt de `H:\Home\Bureau\PortalBuddy_Claude_Handoff\`). Guide d'installation du MCP : `docs/claude-handoff/02_MCP_SETUP_GUIDE.md`. Prompt de reprise : `docs/claude-handoff/03_PROMPT_TO_PASTE.txt`.
+
+- `main` = tag `v0.3` (commit `e6b87d7`) : robot `BP_Buddy`, bascule joueur/robot (E), tir (clic gauche), portail avec animation d'entrée et de sortie, viseur, correctif physique. Tags : `v0.1-poc`, `v0.2-portal`, `v0.3`.
+- Branche `feature/puzzle-rooms` (commit `b660016`, poussée, **non fusionnée**) : niveau `Content/Levels/Lvl_PortalBuddy` avec 4 salles (Le Mur, Le Conduit, L'Archipel, La Tour), checkpoints, zone de chute, plaque de pression et porte, écran de victoire, menu pause (Échap ou Tab) qui explique les règles.
+- Vérifié en PIE par entrées simulées et captures ; **pas encore joué à la main** : l'utilisateur va tester les salles et donner son avis (premier point à demander).
+- Suite proposée : retours sur les salles, fusion + tag `v0.4`, viseur vert/rouge, bots défenseurs + vie + game over (semaine 5), carte par défaut, sons, `README.md` à mettre à jour, build Windows (semaine 6).
+- Dossier de reprise sur le Bureau de l'utilisateur : `H:\Home\Bureau\PortalBuddy_Claude_Handoff\` (script `Setup-McpJson.ps1` pour recréer `.mcp.json`).
